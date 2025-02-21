@@ -1,4 +1,4 @@
-@import "../../styles/globals.scss";
+@use "../../styles/globals" as *;
 .faqSection {
   .container {
     max-width: 1132px;

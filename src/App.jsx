@@ -1,5 +1,4 @@
 import "./App.css";
-import "./styles/index.scss";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import InfoSection from "./components/InfoSection";
