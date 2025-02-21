@@ -1,15 +1,17 @@
 import styles from "./styles.module.scss";
 
 // Example image placeholder
-import supportAgent from "../../assets/support-agent.png";
+import supportAgent from "/public/assets/support-agent.png";
 
 const HelpSection = () => {
   return (
     <section className={styles.helpSection}>
       <div className={styles.container}>
-        <div className={styles.info}>
-          <h2>Need Help?</h2>
-          <p>We are always here to assist you.</p>
+        <div className={styles.content}>
+          <div className={styles.text}>
+            <h2>Need Help?</h2>
+            <p>We are always available to assist you with your inquiries:</p>
+          </div>
           <ul className={styles.contactList}>
             <li>
               <strong>Phone:</strong>{" "}

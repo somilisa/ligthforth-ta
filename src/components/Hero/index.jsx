@@ -1,6 +1,7 @@
 import styles from "./styles.module.scss";
 
-import heroImage from "/public/assets/hero-img.png";
+import heroImage from "/public/assets/hero-img-1.png";
+import heroImage2 from "/public/assets/hero-image-mobile.png";
 import googlePlayBadge from "/public/assets/google-play.png";
 import appStoreBadge from "/public/assets/app-store.png";
 import checkIcon from "/public/assets/check-icon.png";
@@ -40,20 +41,25 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* Right Image/Badges */}
         <div className={styles.imageWrapper}>
           <img
             src={heroImage}
             alt="Student celebrating exam success"
-            className={styles.heroImage}
+            className={`${styles.heroImage} ${styles.desktopOnly}`}
+          />
+          <img
+            src={heroImage2}
+            alt="Student celebrating exam success"
+            className={`${styles.heroImage2} ${styles.mobileOnly}`}
           />
 
-          {/* Overlay Elements */}
-          <div className={styles.checkIcon}>
+          <div className={`${styles.checkIcon} ${styles.desktopOnly}`}>
             <img src={checkIcon} alt="Green check" />
           </div>
-          <div className={styles.infoBadge}>100% Exams For Students</div>
-          <div className={styles.congratsBadge}>
+          <div className={`${styles.infoBadge} ${styles.desktopOnly}`}>
+            100% Exams For Students
+          </div>
+          <div className={`${styles.congratsBadge} ${styles.desktopOnly}`}>
             Congratulations! You scored 100/100
           </div>
         </div>

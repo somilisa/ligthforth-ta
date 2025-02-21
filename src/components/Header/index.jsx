@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from "./styles.module.scss";
 import logo from "/public/assets/logo.svg";
-// import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,7 +16,6 @@ const Header = () => {
           </span>
         </div>
 
-        {/* Navigation */}
         <nav className={`${styles.nav} ${menuOpen ? styles.active : ""}`}>
           <ul>
             <li>
@@ -36,7 +35,6 @@ const Header = () => {
           </ul>
         </nav>
 
-        {/* CTA Actions */}
         <div className={styles.actions}>
           <a href="#" className={styles.ambassador}>
             Become Ambassador
@@ -44,9 +42,8 @@ const Header = () => {
           <button className={styles.getStarted}>Get Started</button>
         </div>
 
-        {/* Mobile Menu Icon */}
         <div className={styles.menuIcon} onClick={() => setMenuOpen(!menuOpen)}>
-          {/* {menuOpen ? <FaTimes /> : <FaBars />} */}
+          {menuOpen ? <FaTimes /> : <FaBars />}
         </div>
       </div>
     </header>
