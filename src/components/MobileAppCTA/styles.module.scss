@@ -1,0 +1,59 @@
+@import "../../styles/globals.scss";
+.mobileAppCTA {
+  .container {
+    max-width: 1291px;
+    margin: 0 auto;
+    padding-top: 62px;
+    display: flex;
+    gap: 83px;
+    justify-content: center;
+    align-items: center;
+    background: $primary-gradient;
+    position: relative;
+    border-radius: 28px;
+    .content {
+      max-width: 561px;
+      .text {
+        margin-bottom: 57px;
+        h3 {
+          font-size: 1.75rem;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          color: $text-color;
+          max-width: 488px;
+          margin-top: 22px;
+        }
+      }
+
+      .badges {
+        display: flex;
+        gap: $spacing-sm;
+
+        img {
+          width: 140px;
+          height: auto;
+          transition: transform 0.2s ease;
+
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
+    }
+    .filter {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url(/public/assets/mobile-app-bg.png);
+      background-repeat: no-repeat;
+      background-position: right;
+      filter: invert(1);
+      z-index: -1;
+      border-radius: 28px;
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@import "../../styles/globals";
+
+.examCoverage {
+  .container {
+    display: flex;
+    align-items: center;
+    max-width: 1109px;
+    gap: 60px;
+    margin: 0 auto;
+
+    .content {
+      .text {
+        margin-bottom: 44px;
+        h3 {
+          font-size: 1.75rem;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          color: $text-color;
+          margin-top: 44px;
+        }
+      }
+    }
+
+    .examsGrid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+
+      .examItem {
+        width: 80px;
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+
+    .ctaButton {
+      background: #1e2a78;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s;
+
+      &:hover {
+        background: #142060;
+      }
+    }
+  }
+}
+.reverse {
+  flex-direction: row-reverse;
+  .text {
+    max-width: 552px;
+  }
+  .imageWrapper {
+    margin: 0 auto;
+    max-width: 496px;
+  }
+}

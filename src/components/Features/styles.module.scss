@@ -1,0 +1,34 @@
+@import "../../styles/globals";
+
+.Features {
+  width: 100%;
+  text-align: center;
+  gap: 60px;
+  .sectionHeader {
+    max-width: 600px;
+    margin: 0 auto 60px;
+
+    .text {
+      max-width: 435px;
+      margin: 0 auto 28px;
+      font-size: 22px;
+      color: $primary-color;
+      background-color: $hero-bg-secondary;
+      line-height: 1.1;
+      padding: 17px 25px;
+      border-radius: 34.5px;
+      // letter-spacing: -2%;
+    }
+  }
+}
+
+.featuresGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-lg;
+  justify-items: center;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

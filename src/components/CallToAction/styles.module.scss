@@ -1,0 +1,73 @@
+@import "../../styles/globals.scss";
+
+.callToAction {
+  text-align: center;
+
+  .container {
+    max-width: 1291px;
+    margin: 0 auto;
+    display: flex;
+    gap: 35px;
+    .ctaCard {
+      background: $primary-gradient;
+      border-radius: 28px;
+      padding: 54px 85px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      &:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      }
+      &:nth-of-type(2) {
+        background: $card-bg-secondary;
+      }
+      .filter {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(/public/assets/mobile-app-bg.png);
+        background-repeat: no-repeat;
+        background-position: bottom;
+        filter: invert(1);
+        z-index: -1;
+        border-radius: 28px;
+      }
+      .text {
+        max-width: 460px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        h3 {
+          margin-bottom: 20px;
+        }
+
+        p {
+          font-size: 22px;
+          line-height: 1.2;
+          margin-top: 20px;
+          color: $text-color;
+        }
+      }
+      .ctaButton {
+        background: $primary-color;
+        color: #fff;
+        border: none;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background: #e68a00;
+        }
+      }
+    }
+  }
+}

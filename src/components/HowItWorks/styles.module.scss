@@ -1,0 +1,73 @@
+@import "../../styles/globals.scss";
+.howItWorks {
+  background-color: #ffffff;
+  padding: 4rem 2rem;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+
+    @media (max-width: 992px) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .imageWrapper {
+    flex: 1;
+    background: $default-gradient;
+    height: 650px;
+    border-radius: 32px;
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+  }
+
+  .stepsWrapper {
+    flex: 1;
+    .title {
+      margin-bottom: 1.5rem;
+    }
+
+    .stepsList {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 2rem;
+
+      li {
+        margin-bottom: 1.5rem;
+
+        h3 {
+          font-size: 1.25rem;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          color: #555;
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .ctaButton {
+      background: #1e2a78;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+
+      &:hover {
+        background: #142060;
+      }
+    }
+  }
+}

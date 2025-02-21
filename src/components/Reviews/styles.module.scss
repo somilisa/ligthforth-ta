@@ -1,0 +1,53 @@
+@import "../../styles/globals.scss";
+.reviews {
+  .container {
+    max-width: 1291px;
+    margin: 0 auto;
+    text-align: center;
+
+    .reviewGrid {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100%;
+      gap: 2rem;
+      margin-top: 2rem;
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .reviewCard {
+      background: $review-bg;
+      border-radius: 15px;
+      padding: 40px 20px;
+      text-align: left;
+      .feedback {
+        font-size: 17px;
+        color: $primary-black;
+        margin-bottom: 1rem;
+      }
+
+      .authorInfo {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        justify-content: flex-start;
+        .avatar {
+          width: 23px;
+          height: 23px;
+          img {
+            width: 100%;
+            height: auto;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+        .author {
+          font-weight: bold;
+          color: $primary-black;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

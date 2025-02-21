@@ -1,0 +1,80 @@
+@import "../../styles/globals";
+.schoolPerformance {
+  .container {
+    max-width: 1261px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    gap: 49px;
+    .image {
+      flex: 1;
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 27px;
+      }
+    }
+    .text {
+      flex: 1;
+      h3 {
+        text-align: left;
+        margin-bottom: 53px;
+        font-size: 40px;
+        line-height: 44px;
+        letter-spacing: -2%;
+        color: $default-gradient;
+      }
+
+      .benefits {
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+        list-style: none;
+        max-width: 615px;
+        text-align: left;
+
+        li {
+          border-radius: 0.5rem;
+          font-size: 1rem;
+          display: flex;
+          gap: 15px;
+          align-items: flex-start;
+          .iconWrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 6px 6px 7px 7px;
+            border-radius: 4px;
+            img {
+              width: 2rem;
+              height: 2rem;
+            }
+          }
+          .green {
+            background-color: #00761d1a;
+          }
+          .dark-blue {
+            background-color: #18168a1a;
+          }
+          .blue {
+            background-color: #2469b31a;
+          }
+          .pink {
+            background-color: #d042c51a;
+          }
+          .benefitText {
+            h4 {
+              color: #111a24;
+              margin-bottom: 15px;
+            }
+            p {
+              font-size: 1rem;
+              color: #1f2d3b;
+            }
+          }
+        }
+      }
+    }
+  }
+}
