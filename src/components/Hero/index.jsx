@@ -5,7 +5,8 @@ import heroImage2 from "/public/assets/hero-image-mobile.png";
 import googlePlayBadge from "/public/assets/google-play.png";
 import appStoreBadge from "/public/assets/app-store.png";
 import checkIcon from "/public/assets/check-icon.png";
-
+import percentIcon from "/public/assets/svgs/percent.svg";
+import emailIcon from "/public/assets/svgs/email.svg";
 import { examLogos } from "../../data/logo";
 
 const Hero = () => {
@@ -57,10 +58,22 @@ const Hero = () => {
             <img src={checkIcon} alt="Green check" />
           </div>
           <div className={`${styles.infoBadge} ${styles.desktopOnly}`}>
-            100% Exams For Students
+            <div>
+              <img src={percentIcon} alt="percent icon" />
+            </div>
+            <div className="text">
+              <h4>100% Exams </h4>
+              <p>For Students</p>
+            </div>
           </div>
           <div className={`${styles.congratsBadge} ${styles.desktopOnly}`}>
-            Congratulations! You scored 100/100
+            <div>
+              <img src={emailIcon} alt="email icon" />
+            </div>
+            <div className="text">
+              <h4>Congratulations! </h4>
+              <p>You scored 100/100</p>
+            </div>
           </div>
         </div>
       </div>

@@ -13,8 +13,9 @@
     align-items: center;
     justify-content: space-between;
     gap: 47px;
-    @media (max-width: 992px) {
-      flex-direction: column;
+    @media (max-width: 768px) {
+      // flex-direction: column;
+      flex-wrap: wrap;
       padding: 53px 20px;
       gap: 52px;
     }
@@ -70,9 +71,6 @@
     align-items: center;
     max-width: 500px;
 
-    @media (max-width: 992px) {
-      margin-top: 2rem;
-    }
     .mobileOnly {
       display: none;
     }
@@ -86,11 +84,11 @@
 
     .checkIcon {
       position: absolute;
-      top: 0;
-      right: 0;
-      transform: translate(30%, -30%);
-      width: 50px;
-      height: 50px;
+      top: 50px;
+      right: -62px;
+      // transform: translate(30%, -30%);
+      width: 92px;
+      height: 92px;
       img {
         width: 100%;
         height: auto;
@@ -100,26 +98,35 @@
     .infoBadge,
     .congratsBadge {
       position: absolute;
-      background: #ffffff;
-      background: #2f327d1a;
+      background: #fff6;
       color: #333;
-
-      font-size: 0.875rem;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 16px;
       font-weight: 500;
-      padding: 0.5rem 1rem;
-      border-radius: 0.5rem;
+      padding: 15px 14px;
+      border-radius: 40px;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      h4 {
+        font-weight: 700;
+      }
     }
 
     .infoBadge {
-      top: 15%;
-      left: -20%;
+      top: 45%;
+      left: -50px;
+      background: #2f327d66;
+      color: $bg-primary;
     }
 
     .congratsBadge {
       bottom: 15%;
-      right: -20%;
+      right: -80px;
       white-space: nowrap;
+      h4 {
+        color: $primary-color;
+      }
     }
 
     @media (max-width: 992px) {
@@ -130,12 +137,13 @@
         right: 5%;
       }
     }
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       .desktopOnly {
         display: none;
       }
       .mobileOnly {
         display: block;
+        width: 100%;
       }
     }
   }
