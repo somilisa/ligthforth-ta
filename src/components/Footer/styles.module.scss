@@ -4,15 +4,28 @@
   color: $bg-default;
 
   .wrapper {
-    max-width: 1200px;
+    max-width: 1275px;
     margin: 0 auto;
 
     .container {
       display: flex;
       justify-content: space-between;
-      padding: 112px 0;
+      padding: 112px 38px;
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 20px;
+        gap: 49px;
+      }
       .brandSection {
         max-width: 480px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        @media screen and (max-width: 768px) {
+          gap: 22px;
+        }
         .logoContainer {
           display: flex;
           align-items: center;
@@ -28,7 +41,6 @@
             font-size: 24px;
 
             span {
-              color: $primary-color;
               font-weight: 400;
             }
           }
@@ -54,8 +66,14 @@
         }
       }
       .footerLinks {
+        flex: 1;
         display: flex;
+        justify-content: flex-end;
         gap: 56px;
+        @media screen and (max-width: 768px) {
+          gap: 16px;
+          justify-content: center;
+        }
         .quickLinks,
         .support {
           h4 {

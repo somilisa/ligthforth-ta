@@ -1,5 +1,5 @@
 import styles from "./styles.module.scss";
-import logo from "/public/assets/logo.svg";
+import logo from "/public/assets/svgs/logo_footer.svg";
 import facebook from "/public/assets/svgs/Facebook.svg";
 import twitter from "/public/assets/svgs/Twitter.svg";
 import instagram from "/public/assets/svgs/Instagram.svg";
