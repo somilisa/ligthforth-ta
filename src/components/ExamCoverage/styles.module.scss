@@ -11,6 +11,7 @@
       flex-direction: column;
     }
     .content {
+      max-width: 573px;
       .text {
         margin-bottom: 44px;
         h3 {
@@ -32,7 +33,8 @@
       align-items: center;
       gap: 16px;
       margin-bottom: 2rem;
-
+      max-width: 400px;
+      margin: 0 auto;
       .examItem {
         width: 80px;
         img {
