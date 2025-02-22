@@ -14,7 +14,7 @@
 }
 //colors
 $primary-color: #2f327d;
-$default-gradient: linear-gradient(135deg, #2f327d 40%, #427fff);
+$default-gradient: linear-gradient(105deg, #2f327d 40%, #427fff);
 $primary-gradient: linear-gradient(#dcf0ff3b 23%, #f5f5f9);
 $text-color: #464646;
 $active-link-color: #094989;
@@ -75,6 +75,10 @@ h1 {
   font-family: $font-family;
   font-size: 80px;
   line-height: 84px;
+  @media (max-width: 768px) {
+    font-size: 32px;
+    line-height: 33px;
+  }
 }
 
 h2 {
@@ -87,6 +91,10 @@ h2 {
   color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @media (max-width: 768px) {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 
 h3 {
@@ -117,12 +125,14 @@ h4 {
 //   font-weight: 700;
 // }
 
-// p {
-//   font-family: $font-family;
-//   font-size: var(--font-size-body);
-//   line-height: var(--line-height-body);
-//   font-weight: var(--font-weight-regular);
-// }
+p {
+  font-family: $font-family;
+  font-size: 22px;
+  line-height: 1.4;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+}
 
 // a {
 //   color: var(--primary-color);

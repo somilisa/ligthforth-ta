@@ -1,0 +1,94 @@
+@use "../../styles/globals" as *;
+.footer {
+  background: $default-gradient;
+  color: $bg-default;
+
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      padding: 112px 0;
+      .brandSection {
+        max-width: 480px;
+        .logoContainer {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+
+          .logo {
+            height: 32px;
+          }
+
+          .brand {
+            font-family: "Roboto", sans-serif;
+            font-weight: 900;
+            font-size: 24px;
+
+            span {
+              color: $primary-color;
+              font-weight: 400;
+            }
+          }
+        }
+
+        p {
+          line-height: 1.5;
+          margin-bottom: 1rem;
+        }
+
+        .socials {
+          display: flex;
+          gap: 14px;
+
+          a {
+            font-size: 30px;
+            transition: ease all 0.3s;
+
+            &:hover {
+              transform: scaleX(1.1);
+            }
+          }
+        }
+      }
+      .footerLinks {
+        display: flex;
+        gap: 56px;
+        .quickLinks,
+        .support {
+          h4 {
+            margin-bottom: 1rem;
+            font-size: 1.125rem;
+          }
+
+          ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+              margin-bottom: 0.5rem;
+
+              a {
+                color: $bg-default;
+                text-decoration: none;
+                &:hover {
+                  color: #1e2a78;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .footerBottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.4);
+      text-align: center;
+      margin-top: 2rem;
+      padding: 48px 0;
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.4);
+    }
+  }
+}

@@ -8,21 +8,21 @@ const featuresData = [
     title: "Offline Practice",
     description:
       "Study anytime, anywhere. Download past questions and practice without needing internet access after logging in.",
-    icon: "/public/assets/svgs/offline-practice.svg", // Adjust path
+    icon: " /assets/svgs/offline-practice.svg", // Adjust path
   },
   {
     id: 2,
     title: "Track Your Progress",
     description:
       "Easily monitor your study progress with our user-friendly interface. See at a glance how much more you need to cover.",
-    icon: "/public/assets/svgs/track-progress.svg", // Adjust path
+    icon: " /assets/svgs/track-progress.svg", // Adjust path
   },
   {
     id: 3,
     title: "Affordable Fees",
     description:
       "We offer competitive rates because your success is our priority. Focus on learning without financial stress.",
-    icon: "/public/assets/svgs/affordable-fees.svg", // Adjust path
+    icon: " /assets/svgs/affordable-fees.svg", // Adjust path
   },
 ];
 

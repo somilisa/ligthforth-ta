@@ -6,6 +6,7 @@ const FeatureCard = ({ feature }) => {
 
   return (
     <article className={styles.featureCard}>
+      <div className={styles.filter}></div>
       <div className={styles.iconWrapper}>
         <img src={icon} alt={`${title} Icon`} />
       </div>

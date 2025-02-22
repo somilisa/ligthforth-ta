@@ -1,4 +1,4 @@
-@import "../../styles/globals.scss";
+@use "../../styles/globals" as *;
 .mobileAppCTA {
   .container {
     max-width: 1291px;

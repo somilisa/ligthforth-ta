@@ -1,4 +1,4 @@
-@import "../../styles/globals";
+@use "../../styles/globals" as *;;
 
 .Features {
   width: 100%;
@@ -11,12 +11,11 @@
     .text {
       max-width: 435px;
       margin: 0 auto 28px;
-      font-size: 22px;
       color: $primary-color;
       background-color: $hero-bg-secondary;
       line-height: 1.1;
       padding: 17px 25px;
-      border-radius: 34.5px;
+      border-radius: 35px;
       // letter-spacing: -2%;
     }
   }
@@ -29,6 +28,6 @@
   justify-items: center;
 
   @media (min-width: 768px) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
 }

@@ -1,4 +1,4 @@
-@import "../../styles/globals";
+@use "../../styles/globals" as *;;
 
 .hero {
   background-color: $bg-primary;
@@ -15,47 +15,42 @@
 
     @media (max-width: 992px) {
       flex-direction: column;
-      text-align: center;
+      padding: 53px 20px;
+      gap: 52px;
     }
   }
 
-  /* Left Content */
   .content {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 60px;
+    @media (max-width: 992px) {
+      gap: 48px;
+    }
     .text {
       display: flex;
       flex-direction: column;
       gap: $spacing-lg;
+      max-width: 540px;
       h1 {
         color: $primary-black;
 
         span {
           color: $primary-color;
         }
-
-        @media (max-width: 768px) {
-          font-size: 2.4rem;
-        }
       }
 
-      // p {
-      //   font-size: 1.125rem;
-      //   color: #555;
-      //   margin-bottom: 2rem;
-      //   line-height: 1.5;
-      //   max-width: 500px; // Keep it readable
-      //   @media (max-width: 768px) {
-      //     margin: 0 auto 2rem;
-      //   }
-      // }
+      p {
+        font-size: 22px;
+        color: $text-color;
+        line-height: 1.5;
+      }
     }
 
     .storeButtons {
       display: flex;
-      gap: 1rem;
+      gap: $spacing-sm;
 
       .badge {
         width: 150px;
@@ -67,23 +62,26 @@
     }
   }
 
-  /* Right Image / Badges */
   .imageWrapper {
     flex: 1;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 500px;
 
     @media (max-width: 992px) {
       margin-top: 2rem;
     }
+    .mobileOnly {
+      display: none;
+    }
 
     .heroImage {
       width: 100%;
-      max-width: 400px; /* Adjust to your design */
+      height: 100%;
       object-fit: cover;
-      border-radius: 1rem;
+      border-radius: 28px;
     }
 
     .checkIcon {
@@ -103,7 +101,9 @@
     .congratsBadge {
       position: absolute;
       background: #ffffff;
+      background: #2f327d1a;
       color: #333;
+
       font-size: 0.875rem;
       font-weight: 500;
       padding: 0.5rem 1rem;
@@ -130,9 +130,16 @@
         right: 5%;
       }
     }
+    @media (max-width: 600px) {
+      .desktopOnly {
+        display: none;
+      }
+      .mobileOnly {
+        display: block;
+      }
+    }
   }
 
-  /* Exam Logos */
   .examLogos {
     background-color: $hero-bg-secondary;
     display: flex;
@@ -140,18 +147,30 @@
     justify-content: center;
     flex-wrap: wrap;
     padding: 22px 0;
-
+    @media screen and (max-width: 768px) {
+      padding: 14px 20px;
+      gap: 5px;
+    }
     .logoContainer {
-      background-color: $bg-default;
+      background-color: #ffffff;
       width: 119px;
       height: 60px;
       border-radius: 30px;
       display: inline-flex;
       justify-content: center;
       align-items: center;
+      @media screen and (max-width: 768px) {
+        width: 84px;
+        height: 30px;
+        border-radius: 15px;
+      }
       img {
         height: auto;
         object-fit: contain;
+        @media screen and (max-width: 768px) {
+          width: 50%;
+          height: 50%;
+        }
       }
     }
   }

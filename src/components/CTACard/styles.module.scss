@@ -1,4 +1,4 @@
-@import "../../styles/globals.scss";
+@use "../../styles/globals" as *;
 .ctaCard {
   background: $primary-gradient;
   border-radius: 10px;

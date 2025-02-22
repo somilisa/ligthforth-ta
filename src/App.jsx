@@ -1,8 +1,9 @@
 import "./App.css";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
-import HowItWorks from "./components/HowItWorks";
+import InfoSection from "./components/InfoSection";
 import MainFeatures from "./components/MainFeatures";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Header />
       <Hero />
       <MainFeatures />
-      <HowItWorks />
+      <InfoSection />
+      <Footer />
     </>
   );
 }
