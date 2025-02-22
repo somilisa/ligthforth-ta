@@ -49,10 +49,13 @@ const Footer = () => {
                   <a href="#">About Us</a>
                 </li>
                 <li>
-                  <a href="#">Blog</a>
+                  <a href="#">Exams</a>
                 </li>
                 <li>
-                  <a href="#">Test Guide</a>
+                  <a href="#">Blogs</a>
+                </li>
+                <li>
+                  <a href="#">Pricing</a>
                 </li>
               </ul>
             </div>
@@ -60,10 +63,10 @@ const Footer = () => {
               <h4>Support Center</h4>
               <ul>
                 <li>
-                  <a href="#">Contact</a>
+                  <a href="#">Terms &amp; Conditions</a>
                 </li>
                 <li>
-                  <a href="#">Terms &amp; Conditions</a>
+                  <a href="#">Support Center</a>
                 </li>
               </ul>
             </div>
