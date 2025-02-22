@@ -5,12 +5,11 @@
     margin: 0 auto;
     display: flex;
     gap: 120px;
-    align-items: center;
+    // align-items: center;
     justify-content: space-between;
 
     @media (max-width: 992px) {
       flex-direction: column;
-      text-align: center;
     }
   }
 
@@ -60,7 +59,7 @@
     img {
       width: 100%;
       height: auto;
-      object-fit: cover;
+      object-fit: contain;
       border-radius: 1rem;
     }
   }

@@ -1,11 +1,15 @@
-@use "../../styles/globals" as *;;
+@use "../../styles/globals" as *;
 .schoolPerformance {
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
   .container {
     max-width: 1261px;
     margin: 0 auto;
     text-align: center;
     display: flex;
     gap: 49px;
+
     .image {
       flex: 1;
       img {

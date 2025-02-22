@@ -1,4 +1,4 @@
-@use "../../styles/globals" as *;;
+@use "../../styles/globals" as *;
 
 .featureCard {
   background-color: $card-bg-primary;
@@ -25,6 +25,7 @@
     height: 100%;
     background-image: url(/public/assets/mobile-app-bg.png);
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: bottom;
     filter: invert(1);
     z-index: -1;
