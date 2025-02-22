@@ -1,6 +1,5 @@
 import styles from "./styles.module.scss";
 
-// Example image placeholder
 import supportAgent from "/public/assets/support-agent.png";
 
 const HelpSection = () => {
@@ -14,11 +13,11 @@ const HelpSection = () => {
           </div>
           <ul className={styles.contactList}>
             <li>
-              <strong>Phone:</strong>{" "}
+              {/* <strong>Phone:</strong>{" "} */}
               <a href="tel:+2348145054463">+234 814 505 4463</a>
             </li>
             <li>
-              <strong>Email:</strong>{" "}
+              {/* <strong>Email:</strong>{" "} */}
               <a href="mailto:info@excelmind.org">info@excelmind.org</a>
             </li>
           </ul>
