@@ -91,6 +91,10 @@ h2 {
   color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @media (max-width: 768px) {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 
 h3 {
