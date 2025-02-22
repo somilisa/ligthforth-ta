@@ -8,16 +8,18 @@
   .container {
     max-width: 1276px;
     margin: 0 auto;
-    padding: 85px 0 85px 27px;
+    padding: 85px 80px 85px 27px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 47px;
     @media (max-width: 768px) {
-      // flex-direction: column;
       flex-wrap: wrap;
       padding: 53px 20px;
       gap: 52px;
+    }
+    @media screen and (max-width: 600px) {
+      flex-direction: column;
     }
   }
 
