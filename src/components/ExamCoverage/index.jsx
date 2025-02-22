@@ -48,7 +48,9 @@ export const Reverse = () => {
           <button className={styles.ctaButton}>Get Started</button>
         </div>
         <div className={styles.imageWrapper}>
-          <img src={pastQuestion} alt={"past questions"} />
+          <div className={styles.image}>
+            <img src={pastQuestion} alt={"past questions"} />
+          </div>
         </div>
       </div>
     </section>

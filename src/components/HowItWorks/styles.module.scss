@@ -1,8 +1,5 @@
 @use "../../styles/globals" as *;
 .howItWorks {
-  @media screen and (min-width: 768px) {
-    padding: 0 40px;
-  }
   .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -68,11 +65,18 @@
       display: flex;
       flex-direction: column;
       gap: 50px;
+      @media screen and (max-width: 992px) {
+        gap: 16px;
+      }
     }
     li {
       counter-increment: item;
       margin-bottom: 5px;
       display: flex;
+      gap: 24px;
+      @media screen and (max-width: 992px) {
+        gap: 16px;
+      }
     }
     li::marker {
       content: ".";
@@ -84,24 +88,31 @@
       background: #2f327d;
       content: "";
       height: 40px;
-      left: 30px;
+      left: 32px;
       position: absolute;
       top: calc(100% + 16px);
-      /* top: 100%; */
       width: 1px;
+      @media screen and (max-width: 768px) {
+        top: 66px;
+        left: 25px;
+      }
     }
     li:before {
-      margin-right: 24px;
       content: counter(item);
       background: $primary-color;
       border-radius: 100%;
       color: white;
-      width: 64px;
+      max-width: 64px;
       height: 64px;
+      width: 100%;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       font-size: 1.5rem;
+      @media screen and (max-width: 768px) {
+        max-width: 50px;
+        height: 50px;
+      }
     }
     .ctaButton {
       background: #1e2a78;

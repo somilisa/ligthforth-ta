@@ -3,7 +3,8 @@
 .examCoverage {
   .container {
     display: flex;
-    // align-items: center;
+    justify-content: center;
+    align-items: center;
     max-width: 1109px;
     gap: 60px;
     margin: 0 auto;
@@ -12,6 +13,12 @@
     }
     .content {
       max-width: 573px;
+      // margin: 0 auto;
+      padding: 105px 0;
+      flex: 1;
+      @media screen and (max-width: 768px) {
+        padding: 0;
+      }
       .text {
         margin-bottom: 44px;
         h3 {
@@ -27,18 +34,37 @@
     }
 
     .examsGrid {
+      padding: 0 33px;
+      flex: 1;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
       gap: 16px;
       margin-bottom: 2rem;
-      max-width: 400px;
-      margin: 0 auto;
+      background-image: url(/public/assets/background-blur.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      @media screen and (max-width: 768px) {
+        padding: 0;
+        max-width: 350px;
+        margin: 0 auto;
+      }
       .examItem {
-        width: 80px;
+        background-color: $bg-default;
+        width: 130px;
+        height: 130px;
+        border-radius: 12px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        @media screen and (max-width: 768px) {
+          width: 95px;
+          height: 95px;
+        }
         img {
-          width: 100%;
+          width: 50%;
           height: auto;
         }
       }
@@ -64,9 +90,21 @@
   flex-direction: row-reverse;
   .text {
     max-width: 552px;
+    // margin: 0 auto;
   }
   .imageWrapper {
-    margin: 0 auto;
-    max-width: 496px;
+    background-image: url(/public/assets/background-blur.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    .image {
+      margin: 0 auto;
+      max-width: 332px;
+      width: 100%;
+      img {
+        height: auto;
+        width: 100%;
+      }
+    }
   }
 }
