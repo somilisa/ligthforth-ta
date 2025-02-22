@@ -11,7 +11,7 @@
       display: flex;
       justify-content: space-between;
       padding: 112px 38px;
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 768px) {
         flex-direction: column;
         align-items: flex-start;
         padding: 40px 20px;
@@ -48,7 +48,8 @@
 
         p {
           line-height: 1.5;
-          margin-bottom: 1rem;
+          font-size: 20px;
+          color: #ffffffb3;
         }
 
         .socials {
@@ -78,7 +79,7 @@
         .support {
           h4 {
             margin-bottom: 1rem;
-            font-size: 1.125rem;
+            font-size: 26px;
           }
 
           ul {
@@ -91,6 +92,8 @@
               a {
                 color: $bg-default;
                 text-decoration: none;
+                font-size: 20px;
+                color: #ffffffb3;
                 &:hover {
                   color: #1e2a78;
                 }

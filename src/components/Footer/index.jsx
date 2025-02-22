@@ -18,9 +18,10 @@ const Footer = () => {
               </span>
             </div>{" "}
             <p>
-              At Excel Mind, we believe everyone deserves the best possible
-              chance to excel. Our platform is designed to empower you on your
-              exam journey.
+              At Excel Mind, we believe everyone deserves the best chance
+              possible to excel academically. We are driven to provide
+              innovations through technology that makes learning convenient,
+              accessible and pocket friendly.
             </p>
             <div className={styles.socials}>
               <a href="#">
