@@ -1,9 +1,9 @@
 import styles from "./styles.module.scss";
 import logo from "/public/assets/logo.svg";
 import facebook from "/public/assets/svgs/Facebook.svg";
-import twitter from "/public/assets/svgs/twitter.svg";
-import instagram from "/public/assets/svgs/instagram.svg";
-import linkedin from "/public/assets/svgs/linkedin.svg";
+import twitter from "/public/assets/svgs/Twitter.svg";
+import instagram from "/public/assets/svgs/Instagram.svg";
+import linkedin from "/public/assets/svgs/Linkedin.svg";
 
 const Footer = () => {
   return (
