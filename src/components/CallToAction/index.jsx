@@ -27,6 +27,7 @@ const ReferralProgram = () => {
           </button>
         </CTACard>
         <CTACard>
+          <div className={styles.filter}></div>
           <div className={styles.text}>
             <h2>Become an Ambassador</h2>
             <p>
