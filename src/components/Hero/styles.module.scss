@@ -3,6 +3,7 @@
 .hero {
   background-color: $bg-primary;
   width: 100%;
+  overflow: hidden;
 
   .container {
     max-width: 1276px;
@@ -12,7 +13,6 @@
     align-items: center;
     justify-content: space-between;
     gap: 47px;
-    overflow: hidden;
     @media (max-width: 992px) {
       flex-direction: column;
       padding: 53px 20px;
