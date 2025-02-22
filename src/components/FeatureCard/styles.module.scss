@@ -1,4 +1,4 @@
-@import "../../styles/globals";
+@use "../../styles/globals" as *;;
 
 .featureCard {
   background-color: $card-bg-primary;
