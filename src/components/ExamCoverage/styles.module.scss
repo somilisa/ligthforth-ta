@@ -1,13 +1,15 @@
-@use "../../styles/globals" as *;;
+@use "../../styles/globals" as *;
 
 .examCoverage {
   .container {
     display: flex;
-    align-items: center;
+    // align-items: center;
     max-width: 1109px;
     gap: 60px;
     margin: 0 auto;
-
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
     .content {
       .text {
         margin-bottom: 44px;

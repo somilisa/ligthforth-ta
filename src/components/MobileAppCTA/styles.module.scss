@@ -11,6 +11,9 @@
     background: $primary-gradient;
     position: relative;
     border-radius: 28px;
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+    }
     .content {
       max-width: 561px;
       .text {
